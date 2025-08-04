@@ -6,7 +6,7 @@ This program predicts whether a secreted gene has prohormone activity based on t
 
 To get the FASTA files for all current reviewed, secreted, human genes (as in <code>secreted.fasta</code>), use the following request to the [UniProtKB API](https://www.uniprot.org/uniprot/):
 
-[> [https://rest.uniprot.org/uniprotkb/search?query=(cc_scl_term:SL-0243)%20AND%20(reviewed:true)%20AND%20Human&format=fasta&size=500](https://rest.uniprot.org/uniprotkb/search?query=(cc_scl_term:SL-0243)%20AND%20(reviewed:true)%20AND%20Human&format=fasta&size=500)](https://rest.uniprot.org/uniprotkb/stream?compressed=true&format=fasta&query=%28%28cc_scl_term%3ASL-0243%29+AND+%28organism_id%3A9606%29+AND+%28reviewed%3Atrue%29%29)
+[> [https://rest.uniprot.org/uniprotkb/stream?format=fasta&query=%28%28cc_scl_term%3ASL-0243%29%29+AND+%28reviewed%3Atrue%29+AND+%28model_organism%3A9606%29](https://rest.uniprot.org/uniprotkb/stream?format=fasta&query=%28%28cc_scl_term%3ASL-0243%29%29+AND+%28reviewed%3Atrue%29+AND+%28model_organism%3A9606%29)](https://rest.uniprot.org/uniprotkb/stream?compressed=true&format=fasta&query=%28%28cc_scl_term%3ASL-0243%29+AND+%28organism_id%3A9606%29+AND+%28reviewed%3Atrue%29%29)
 
 ## Running the Program (Unix/macOS)
 First ensure that you have Python 3.x and pip installed. Then, create and activate a virtual environment using the following commands:
